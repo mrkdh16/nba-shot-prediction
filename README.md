@@ -36,6 +36,7 @@ Grid searching for the number of hidden layers and the number of neurons in each
 Some of my conclusions from the heatmaps:
    - Models generally performed better with more neurons but the performace increased only marginally after ~32.
    - Larger neuron counts definitely reduced variance in model performance.
+
 A single hidden layer with 256 neurons achieved the following results:
    - Cross-validation: Accuracy = 62.9%, AUC = 65.2%
    - Test set: Accuracy = 64.4%, AUC = 66.0%.
