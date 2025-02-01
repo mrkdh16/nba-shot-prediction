@@ -8,13 +8,13 @@ A project from Stanford CS229 by Brett Meehan inspired this study (https://cs229
 
 ## Methodology.
 - **Logistic Regression**: Established baseline performance.
-- **Neural Networks**: Models were trained with He initialization and evaluated using 10-fold cross-validation and a test set (5% split). Threshold optimization via Youden's J statistic improved accuracy by ~1.5%.  
 - **Feature Importance**: Logistic regression was used to evaluate variable contributions by training models with only individual variables.  
+- **Neural Networks**: Models were trained with He initialization and evaluated using 10-fold cross-validation and a test set (5% split). Threshold optimization via Youden's J statistic improved accuracy by ~1.5%.  
 
 ## Results.
 ### **Logistic Regression**
 
-Training models with only individual variables yielded the following results. The individual varaibles that created the best performing models were shot distance, closest defender id, and shooter id. Models with ~0.5 AUC or lower which should be seen as random guessing or worse were excluded. Models excluded used the following variables: location (home/away), win/loss, the number of shots taken before the current one, the amount of time spent with the ball before shooting it, and the distance to the closest defender.
+Training models with only individual variables yielded the following results. The individual variables that created the best performing models were shot distance, closest defender id, and shooter id. Models with ~0.5 AUC or lower which should be seen as random guessing or worse were excluded. Models excluded used the following variables: location (home/away), win/loss, the number of shots taken before the current one, the amount of time spent with the ball before shooting it, and the distance to the closest defender.
 
 <img src="https://github.com/user-attachments/assets/bd5c3f80-62be-4193-9d68-9189d1bd2199" alt="features" width="600">
 
